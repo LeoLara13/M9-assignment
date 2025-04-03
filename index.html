@@ -1,0 +1,126 @@
+OCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA Trades</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body style="background-color:rgb(165, 29, 29);"></body>
+     <div id="container">
+       <header><h1><center>
+        
+       Houston Rockets
+      
+      </center></h1></header>
+<nav><ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="https://leolara13.github.io/M5-assignment/">Rosters</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li style="float:right"><a class="active" href="#about">About</a></li>
+  </ul></nav>
+<section>
+<article class="left"> 
+<form action="">
+<label for="username">User Name:</label><br>
+<input type="text" id="username" name="username"><br>
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password"><br>
+<input type="submit" value="Submit">
+
+</form>
+
+</article>
+<article class="right">About the Houston Rockets</article>
+ 
+<article></article>
+<svg width="300" height="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:rgb(255, 255, 255);stroke:rgb(0, 0, 0);stroke-width:5;fill-rule:evenodd;" />
+  </svg>
+  
+
+</article>
+
+
+</section>
+<footer>Copyright Leo Lara 2025<br>
+    <audio controls>
+        <source src="rocket_ship_taking_o.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio><br>
+<button onclicks="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<background-image: Red_Background.jpg></background-image:>
+</footer>
+
+
+
+<style>@charset "UTF-8";
+    /* CSS Document */
+    *{
+        box-sizing: border-box;
+    }
+   
+   
+    body{
+        background: url("Red_Background.jpg") no-repeat fixed top;
+        background-size: cover; 
+        
+    #container{
+        width: 800px;
+         margin: 0 auto;
+    }
+    .left{
+        width: 380px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 25px;
+        float: left;
+        margin: 0px 10px 10px 15px;
+        padding: 30px 30px 30px 30px;
+        border: solid 3px rgb(0, 0, 0);
+    }
+    
+    .right{
+        width: 380px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 25px; 
+        float: left;
+        margin: 0px 0px 10px 0px;
+        padding: 30px 30px 30px 30px;
+        visibility: ;
+    }
+    footer{
+        background-color:rgba(255,255,255,1.00);
+        clear: both;
+    }
+    header >h1{
+        text-align: center;
+        color: #fff;
+    }</style>
+
+
+
+</body>
+
+<script>
+    const x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function success(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+</html>
